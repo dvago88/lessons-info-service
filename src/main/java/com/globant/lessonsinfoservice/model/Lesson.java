@@ -11,7 +11,7 @@ import javax.persistence.Id;
 public class Lesson {
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
+  @GeneratedValue(strategy = GenerationType.SEQUENCE)
   private int lessonId;
   private int userId;
   private String description;
